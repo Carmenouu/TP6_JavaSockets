@@ -7,12 +7,12 @@ import java.net.Socket;
 import java.net.SocketException;
 
 
-public class Worker1025 {
+public class Worker1026 {
 		
 	 public static void main(String[] args) {
 
 	         try {
-	            ServerSocket serveur = new ServerSocket(1025);
+	            ServerSocket serveur = new ServerSocket(1026);
 	            Socket s = serveur.accept() ;
 	            
 	            try {
@@ -61,7 +61,7 @@ public class Worker1025 {
 
 		//Méthode permettant d'estimer pi
 		private static int calculPi() {
-			int nThrows = 80000000;
+			int nThrows = 53000000;
 			double x = 0, y = 0;
 			int nSuccess = 0;
 			for (int i = 1; i <= nThrows; i++) {

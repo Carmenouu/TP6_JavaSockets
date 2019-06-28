@@ -60,8 +60,8 @@ public class Worker1024 {
 	}
 
 	//Méthode permettant d'estimer pi
-	private static double calculPi() {
-		int nThrows = 100000;
+	private static int calculPi() {
+		int nThrows = 80000000;
 		double x = 0, y = 0;
 		int nSuccess = 0;
 		for (int i = 1; i <= nThrows; i++) {
@@ -70,8 +70,7 @@ public class Worker1024 {
 			if (x * x + y * y <= 1)
 				nSuccess++;
 		}
-		double value = 4.0 * nSuccess / nThrows;
-		return value;
+		return nSuccess;
 	}
 	
 	//La méthode que nous utilisons pour lire les réponses
